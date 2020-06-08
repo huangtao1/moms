@@ -1,0 +1,1 @@
+INSERT INTO `moms`.`users`(`id`, `full_name`, `email`, `hashed_password`, `is_active`) VALUES (3, 'admin', 'admin@xxx.com', '$2b$12$xLzG.80T/VNUoV3ncBhpFetX1.gYuQoRDnqQVMvN5k6S5FxbbO4bO', 1);
