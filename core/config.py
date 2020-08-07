@@ -16,11 +16,11 @@ class Settings(BaseSettings):
     # 跨域白名单
     BACKEND_CORS_ORIGINS: List[AnyHttpUrl] = []
     # db配置
-    DB_HOST = "127.0.0.1"
+    DB_HOST = "10.34.8.242"
     DB_PORT = 3306
     DB_DATABASE = "moms"
     DB_USER = "moms"
-    DB_PASSWORD = "oraro@123"
+    DB_PASSWORD = "moms@123"
     DB_URL = f"mysql://{DB_USER}:{DB_PASSWORD}@{DB_HOST}:{DB_PORT}/{DB_DATABASE}"
 
 

@@ -13,5 +13,7 @@ def get_db():
         yield db
     finally:
         db.close()
+
+
 def get_session():
     return Session()
