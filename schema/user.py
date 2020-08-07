@@ -16,13 +16,15 @@ class UserLogin(BaseModel):
 
 
 class UserBase(BaseModel):
-    email: Optional[EmailStr] = None
+    username: str
+    email: EmailStr
     is_active: Optional[bool] = True
-    full_name: Optional[str] = None
+    full_name: str
 
     class Config:
         schema_extra = {
             "example": {
+                "username": "huangtao",
                 "email": "huangtao123689@gmail.com",
                 "is_active": True,
                 "full_name": "huangtao"
@@ -36,6 +38,7 @@ class NewUser(UserBase):
     class Config:
         schema_extra = {
             "example": {
+                "username": "huangtao",
                 "email": "huangtao123689@gmail.com",
                 "is_active": True,
                 "full_name": "huangtao",

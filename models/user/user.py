@@ -9,6 +9,7 @@ pwd_context = CryptContext(schemes=["bcrypt"], deprecated="auto")
 class User(Base):
     __tablename__ = "users"
     id = Column(Integer, primary_key=True, index=True)
+    username = Column(String(20), nullable=False)
     full_name = Column(String(200), index=True)
     email = Column(String(200), unique=True, index=True, nullable=False)
     hashed_password = Column(String(200), nullable=False)
@@ -21,4 +22,4 @@ class User(Base):
         return pwd_context.verify(password, self.hashed_password)
 
     def __repr__(self):
-        return f"<User(full_name={self.full_name},email={self.email})>"
+        return f"<User(username={self.username},email={self.email})>"
