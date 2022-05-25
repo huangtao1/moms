@@ -1,5 +1,5 @@
 fastapi[all]
 pydantic==1.5.1
-PyJWT==1.7.1
+PyJWT==2.4.0
 SQLAlchemy==1.3.17
 passlib[bcrypt]
